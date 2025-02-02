@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.left-section {
+    flex: 0 0 580px;
+    padding: 20px 0 20px 20px;
+    margin-right: 32px;
+}
+
+.left-section h1 {
+    color: #1877f2;
+    font-size: 56px;
+    font-weight: bold;
+    margin: -20px 0 20px;
+}
+
+.left-section p {
+    font-size: 28px;
+    line-height: 32px;
+    width: 500px;
+}
+
+.right-section {
+    flex: 0 0 396px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 24px;
+}
+
+.login-form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 396px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 17px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    outline: none;
+    color: #1d2129;
+    background-color: #fff;
+}
+
+/* New input focus styles */
+.login-form input:focus {
+    border: 1px solid #1877f2;
+    box-shadow: 0 0 0 2px rgb(24 119 242 / 20%);
+}
+
+/* Input placeholder styles */
+.login-form input::placeholder {
+    color: #90949c;
+}
+
+/* Login button styles updated */
+.login-button {
+    width: 100%;
+    background-color: #1877f2;
+    color: white;
+    padding: 14px 16px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.login-button:hover {
+    background-color: #166fe5;
+}
+
+.forgot-password {
+    text-align: center;
+    margin: 16px 0;
+    border-bottom: 1px solid #dadde1;
+    padding-bottom: 20px;
+}
+
+.forgot-password a {
+    color: #1877f2;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Create account button styles updated */
+.create-account-button {
+    background-color: #42b72a;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 14px 16px;
+    margin: 0 auto;
+    cursor: pointer;
+    display: block;
+    transition: background-color 0.2s ease;
+}
+
+.create-account-button:hover {
+    background-color: #36a420;
+}
+
+
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-section {
+        text-align: center;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .left-section p {
+        width: auto;
+        font-size: 24px;
+    }
+
+    .right-section {
+        margin-top: 40px;
+    }
+}
