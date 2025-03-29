@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000;
+}
+
+/* Header Styles */
+.header {
+    padding: 0 5%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 30px;
+    padding: 20px ;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #262626;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 600px;
+    background: url('https://www.microsoft.com/image-asset-placeholder') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 50%;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #0067b8;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.cta-button:hover {
+    background: #00529f;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding: 48px 5%;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.product-card p {
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.product-link {
+    color: #0067b8;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.product-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #f9f9f9;
+    padding: 48px 5%;
+    color: #606770;
+    border-top: 1px solid #eaeaea;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 24px;
+}
+
+.footer-column h4 {
+    font-size: 15px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #0078d4;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero-content {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content {
+        max-width: 90%;
+    }
+}
