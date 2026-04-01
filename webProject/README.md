@@ -1,52 +1,56 @@
 BSS's Restaurant — Full-Stack Web Application
-This is a full-stack web application built for BSS's Restaurant (based in Almaty). It allows customers to browse the menu, manage a shopping cart, and place orders.
+
+This is a comprehensive web application for **BSS's Restaurant**, a fictional dining establishment based in Almaty. The project is built as a **Full-Stack** solution, featuring a modern Angular frontend and a robust backend API.
+
+---
 
 📂 Project Structure
-According to the checklist, here is the breakdown of the repository:
+To satisfy the documentation requirements, the repository is organized as follows:
 
-BSS_front/ — Frontend application built with Angular. Contains all UI components (Menu, Cart, Reservations).
+* **`BSS_front/`** — **Angular** application. Contains UI components for the Menu, Cart, and Reservations.
+* **`bss_back/`** — **Backend** server. Manages the API logic and order processing.
+* **`WD Project.postman_collection.json`** — **API Documentation**. A complete collection of requests for testing in Postman.
+* **`README.md`** — Project overview and setup instructions.
 
-bss_back/ — Backend server that handles API requests and data logic.
+---
 
-WD Project.postman_collection.json — A complete set of API tests and examples to use in Postman.
+## ✨ Key Features
+* **Interactive Menu:** Browse dishes with real-time updates.
+* **Order System:** Add/remove items from the shopping cart.
+* **Total Calculation:** Automatic price calculation using RxJS on the frontend.
+* **Reservations:** A dedicated form for table booking.
+* **API Testing:** Pre-configured Postman environment for developers.
 
-README.md — Project documentation.
+---
 
-✨ Features
-Digital Menu: View all available dishes and prices.
+## 🛠 Technologies Used
+* **Frontend:** Angular (v16+), TypeScript, HTML/CSS, Bootstrap.
+* **Backend:** Node.js (Express) / Python (API Service).
+* **Communication:** RESTful API with JSON data exchange.
 
-Order Management: Add or remove items from the cart with real-time total calculation.
+---
 
-Full-Stack Integration: The Angular frontend communicates with the backend API.
+## 🚀 Installation & Setup
 
-API Testing: Pre-configured Postman collection for developers.
-
-🛠 Technologies Used
-Frontend: Angular, TypeScript, HTML/CSS, Bootstrap.
-
-Backend: Node.js (Express) or Python (depending on your bss_back logic).
-
-Tools: Postman for API testing, RxJS for state management.
-
-🚀 Installation & Setup
-1. Backend Setup
-Bash
+### 1. Backend Service
+```bash
 cd bss_back
 npm install
 npm start
-2. Frontend Setup
-Bash
+```
+
+### 2. Frontend Application
+```bash
 cd BSS_front
 npm install
 ng serve
-Navigate to http://localhost:4200/ to view the application.
+```
+*Once started, navigate to **http://localhost:4200/** to view the application.*
 
-📝 Examples & Testing
-To test the API without the frontend, import the WD Project.postman_collection.json into Postman.
+---
 
-Example API flow:
-
-GET /menu — Returns a list of all dishes.
-
-POST /order — Sends the cart data to the server.
-
+## 📝 Examples & Testing
+You can test the system functionality using the provided **Postman Collection**:
+1.  Import `WD Project.postman_collection.json` into Postman.
+2.  Run the `GET /menu` request to see the dish list.
+3.  Run the `POST /order` request to simulate a customer checkout.
