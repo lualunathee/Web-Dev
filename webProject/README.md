@@ -20,8 +20,4 @@ This is a web application built with Angular for BSS's Restaurant, a fictional r
 - HTML/CSS
 - Bootstrap
 
-## Contributors
-- Tokmukamet Bayashat
-- Baktybayev Serzhan
-- Nadyrkhanov Sanzhar
 
